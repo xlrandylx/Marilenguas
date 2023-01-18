@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#IconMusic1{
+	height: 35px;
+	width: 35px;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	cursor: pointer;
+}
+
+/*****************************************************************************/
+.Contendor{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	z-index: -1;
+	margin: 0px;
+	font-size: 0px;
+	padding: 0px;
+}
+
+.ButtonStyle {
+  background-color: transparent;
+	border: transparent;
+}
+
+@keyframes slidein {
+  from {
+    top: -20vh;
+  }
+  to {
+    top: 120vh;
+  }
+}
+
+.Col{	
+	display: inline-block;
+	width: 20%;
+}

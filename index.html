@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversario Amor</title>
+    <link rel="shortcut icon" href="./images/corazon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<style>
+    body{
+        margin:0;
+        padding:0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            background-image: url(https://pps.whatsapp.net/v/t61.24694-24/310713133_1536014170231280_5137913571095627205_n.jpg?ccb=11-4&oh=01_AdS4pAu0L0Wooi8ptk0mWRTGTe7SWSgqrz2Ma0JTWAGyRQ&oe=63C9AFB4);
+    }
+    
+    .heart {
+        height: 150px;
+        width: 150px;
+        background-color:red;
+        position: relative;
+        transform: rotate(45deg);
+        box-shadow: -100px  40px 750px #f20044;
+        animation: palpitar 0.5s linear infinite alternate;
+        
+    }
+    .contenido {
+         position: fixed;
+         margin-bottom: 200px;
+         text-align: center;
+         
+    }
+    h1 {color: white
+    }
+    h2 {color: white
+    }
+    h3 {color: white
+    }
+    
+    @keyframes palpitar{
+        0%{
+            transform: rotate(45deg) scale(2.50);
+        }
+        80%{
+            transform: rotate(45deg) scale(2.50);
+        }
+        100%{
+            transform: rotate(45deg) scale(2.2);
+        } 
+    }
+    .heart::before{
+        content: "";
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        background: red;
+        top: -50%;
+        border-radius: 50%;
+        box-shadow: 10px  20px 150px #f20044;
+    }
+    .heart::after{
+        content: "";
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        background: red;
+        right: 50%;
+        border-radius: 50%;
+        box-shadow: 20px  20px 150px #f20044;
+    }
+    
+    </style>
+<body>
+    <div class="heart"></div>
+
+    <div class="contenido"><h1>Feliz 4to Aniversario Mi amor</h1><h2>Mi Marilengüitas preciosa hoy cumplimos<p>4 meses, no sabes cuan feliz estoy</p><p>de haberte conocido y quiero pasar</p><p>el resto de mi vida contigo</p><p>eres la unica persona que saca</p><p>lo mejor de mí, me haces tan bien,</p><p>que no me imagino una vida sin tí</p><p>Quedate siempre junto a mí</p><p>Que yo te cuidare y</p><p>te amare para siempre.</p><p>TE AMO</p></h2></div>
+
+    <button name="button"id="Music" class="ButtonStyle" onclick='Sonido()'>
+        <img id="IconMusic1" src="./images/icon_sound.png">		
+    </button>
+    <script src="musica.js"></script>
+</body>
+</html>
